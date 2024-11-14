@@ -23,7 +23,7 @@
     </div>
 
     <dialog class="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md">
-      <h1 class="text-2xl font-semibold mb-4">Book Library</h1>
+      <h1 class="text-2xl font-semibold mb-4">ADD NEW BOOK</h1>
       <form id="bookForm" class="space-y-4">
         <input
           type="text"
@@ -46,9 +46,11 @@
           class="w-full p-2 border rounded"
           required
         />
-        <div class="flex justify-between items-center">
-          <label for="status">Have you read it:</label>
-          <input type="checkbox" name="Status" id="status" />
+        <div>
+          <label class="flex justify-between items-center">
+            <span>Read status</span>
+            <input type="checkbox" name="Read status" id="read" />
+          </label>
         </div>
         <div class="flex gap-4">
           <button
