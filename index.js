@@ -28,7 +28,7 @@ function displayBooks() {
 
   library.forEach((book, index) => {
     const bookCard = document.createElement("div");
-    bookCard.classList = "p-4 bg-white shadow rounded-md w-72 relative";
+    bookCard.classList = "p-4 bg-white shadow rounded-md w-72";
 
     bookCard.innerHTML = `
     <div class="z-[100]">
