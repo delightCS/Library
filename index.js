@@ -28,19 +28,19 @@ function displayBooks() {
 
   library.forEach((book, index) => {
     const bookCard = document.createElement("div");
-    bookCard.classList = "p-4 bg-white shadow rounded-md w-72 h-64 relative";
+    bookCard.classList = "p-4 bg-white shadow rounded-md w-72 relative";
 
     bookCard.innerHTML = `
     <div class="z-[100]">
       <h2 class="text-2xl font-bold">${book.title}</h2>
       </div>
-      <div class="absolute top-[50%]">
+      <div class="">
       <p class="trunctae">by: ${book.author}</p>
       <p>Pages: ${book.pages}</p>
       <p>Status: <span class="${book.read ? "text-green-500" : "text-red-500"}">
         ${book.read ? "Read" : "Not Read"}</span></p>
         </div>
-      <div class="absolute bottom-2">
+      <div class="">
       <button onclick="toggleReadStatus(${index})" class="bg-gray-200 p-1 rounded mr-4">
         ${book.read ? "Not read" : "Read"}
       </button>
